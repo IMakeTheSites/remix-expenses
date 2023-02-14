@@ -1,7 +1,5 @@
-export default function ExpenseId() {
-  return (
-    <main>
-      <h1>Expense ID</h1>
-    </main>
-  );
+import ExpenseForm from "~/components/expenses/ExpenseForm";
+
+export default function UpdateExpensesPage() {
+  return <ExpenseForm />;
 }
