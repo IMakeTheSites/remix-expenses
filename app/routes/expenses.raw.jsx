@@ -1,7 +1,18 @@
-export default function RawExpensesPage() {
-  return (
-    <main>
-      <h1>Raw Expenses</h1>
-    </main>
-  );
+const DUMMY_EXPENSES = [
+  {
+    id: "e1",
+    title: "First Expense",
+    amount: 69,
+    date: new Date().toISOString(),
+  },
+  {
+    id: "e2",
+    title: "Second Expense",
+    amount: 10,
+    date: new Date().toISOString(),
+  },
+];
+
+export function loader() {
+  return DUMMY_EXPENSES;
 }
