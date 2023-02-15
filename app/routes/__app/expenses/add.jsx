@@ -17,7 +17,7 @@ export default function AddExpensePage() {
   );
 }
 
-export async function action({ request, params }) {
+export async function action({ request }) {
   const formData = await request.formData();
   const expenseData = Object.fromEntries(formData);
 
